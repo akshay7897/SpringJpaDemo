@@ -11,6 +11,11 @@ import com.ap.jpa.repo.StudentRepository;
 
 @SpringBootApplication
 public class DataJpaApplication {
+	
+	
+	public void m2() {
+		// bug 202 fixed 
+	}
 
 	public static void main(String[] args) {
 
