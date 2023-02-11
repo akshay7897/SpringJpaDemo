@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.ap.jpa.model.Student;
 import com.ap.jpa.repo.StudentRepository;
 
 @SpringBootApplication
@@ -16,6 +15,13 @@ public class DataJpaApplication {
 	public void m2() {
 		// bug 202 fixed 
 	}
+	
+	public void m1() {
+		//logic of before stash
+		// bug 201 fixed ....
+	}
+	
+	
 
 	public static void main(String[] args) {
 
@@ -70,6 +76,9 @@ public class DataJpaApplication {
 		 * 
 		 * } else { System.out.println("record not found"); }
 		 */
+		
+	
+		
 
 	}
 
