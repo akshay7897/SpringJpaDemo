@@ -49,9 +49,9 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
 	@Query("update Student set name=:name where id=:id")
 	public Integer updateStudent(int id, String name);
 
-	@Query(value = "insert into student_details(id,name,gender,rank)values(:id,:name,:gender,:rank);", nativeQuery = true)
 	@Modifying
 	@Transactional
-	public void insertStudent(Integer id, String name, String gender, Integer rank);
+	@Query(value = "insert into student(`id`,`name`,`gender`,`rank`) values(:id,:name,:gender,:rank)",nativeQuery = true)
+	public void insertStudent(Integer id,String name,String gender,Integer rank);
 
 }

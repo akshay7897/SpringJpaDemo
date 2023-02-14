@@ -9,7 +9,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="student_details")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
